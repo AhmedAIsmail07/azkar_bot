@@ -28,7 +28,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Bot token
-TOKEN = "7924990454:AAEq5E8GJ6dslS9jgSyFPAV3dXOmoWnXV7w"
+import os
+TOKEN = os.environ.get("BOT_TOKEN")
+
 
 # Egypt timezone
 EGYPT_TZ = pytz.timezone('Africa/Cairo')
